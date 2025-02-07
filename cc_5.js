@@ -106,3 +106,11 @@ function applyDiscount (price, discount){
 
 //Logging a 25% discout on something that costs 100 dollars using a template literal.
 console.log(`Total after discount: $${applyDiscount(100, .25)}`)
+
+//Task 10 - Arrow Function
+
+//Writing an arrow function the calculates how many points are earned on a purchase based on 1 point per 10 dollars spent.
+const calculatePoints = (purchaseAmount) => purchaseAmount * 0.1 //Multiplying the purchase amount by 0.1 because 1 is 1/10th of 10, which is the ratio of points to dollars.
+
+//Logging the arrow function with a pruchase amount of 150 dollars using a template literal. Expected outcome is 15 points.
+console.log(`Points Earned: ${calculatePoints(150)}`)
