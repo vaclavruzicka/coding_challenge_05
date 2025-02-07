@@ -75,3 +75,14 @@ let totalRevenue = sales.reduce((sum, price) => sum + price, + 0) //Using totalR
 
 //Logging the total revenue using a template literal.
 console.log(`Total Revenue: $${totalRevenue}`)
+
+//Task 7 - find() Method
+
+//Declaring an array named customers with the values Alice, Bob, Charlie, and David.
+let customers = ["Alice", "Bob", "Charlie", "David"]
+
+//Locating the customer Charlie within an array using find. 
+let findCustomer = customers.find(string => string == "Charlie") //Declaring new variable to not edit the original array.
+
+//Logging the customer finder using a template literal.
+console.log(`Found Customer: ${findCustomer}`)
