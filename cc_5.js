@@ -41,7 +41,7 @@ cartItems.unshift("Waffles")
 cartItems.shift()
 
 //Logging the final array to the console.
-console.log(cartItems)
+console.log(`Shopping Cart: ${cartItems}`)
 
 //Task 4 - Map Method
 
@@ -52,7 +52,7 @@ let prices = [100, 200, 300]
 let tenPercentDiscount = prices.map(num => num * .9) //Multiplying by .9 to simulate 10% being discounted.
 
 //Logging the new discounted prices.
-console.log(tenPercentDiscount)
+console.log(`Prices discounted 10%: ${tenPercentDiscount}`)
 
 //Task 5 - Filter Method
 
