@@ -22,3 +22,23 @@ order.displayOrder = function() {
     return this.orderID, this.totalAmount, this.status
 }
 console.log(order.displayOrder())
+
+//Task 3 - Array Manipulation
+
+//Declaring an array named cartItems with three different products.
+let cartItems = ["Eggs", "Milk", "Cereal"]
+
+//Adding a new product to the cart using push.
+cartItems.push("Energy Drinks")
+
+//Removing the last item added by using pop.
+cartItems.pop()
+
+//Adding an item to the beginning of the array using unshift.
+cartItems.unshift("Waffles")
+
+//Removing the first item from the array using shift.
+cartItems.shift()
+
+//Logging the final array to the console.
+console.log(cartItems)
