@@ -53,3 +53,14 @@ let tenPercentDiscount = prices.map(num => num * .9) //Multiplying by .9 to simu
 
 //Logging the new discounted prices.
 console.log(tenPercentDiscount)
+
+//Task 5 - Filter Method
+
+//Declaring and array named inventory with two of the five values being zero to simulate no stock of a product.
+let inventory = [5, 0, 12, 8, 0]
+
+//Removing the products with no stock using the filter method.
+let stockedInventory = inventory.filter(product => product > 0)
+
+//Logging the filtered inventory array.
+console.log(`Stocked Inventory: ${stockedInventory}`)
