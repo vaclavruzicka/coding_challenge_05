@@ -42,3 +42,14 @@ cartItems.shift()
 
 //Logging the final array to the console.
 console.log(cartItems)
+
+//Task 4 - Map Method
+
+//Declaring an array named prices with the values 100, 200, and 300.
+let prices = [100, 200, 300]
+
+//Applying a 10% discount using the map method.
+let tenPercentDiscount = prices.map(num => num * .9) //Multiplying by .9 to simulate 10% being discounted.
+
+//Logging the new discounted prices.
+console.log(tenPercentDiscount)
