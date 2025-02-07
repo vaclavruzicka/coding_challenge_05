@@ -17,9 +17,9 @@ let order = {
     orderID: 12345, totalAmount: 150, status: "Prosessing"
 }
 
-//Adding a method named displayOrder to order the details by retrieving the details using "this".
+//Adding a method named displayOrder to order the details by retrieving the details using "this" inside of a template literal.
 order.displayOrder = function() {
-    return this.orderID, this.totalAmount, this.status
+    return `Order ID: ${this.orderID}, Total Amount: $${this.totalAmount}, Status: ${this.status}`
 }
 console.log(order.displayOrder())
 
