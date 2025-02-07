@@ -40,7 +40,7 @@ cartItems.unshift("Waffles")
 //Removing the first item from the array using shift.
 cartItems.shift()
 
-//Logging the final array to the console.
+//Logging the final array to the console with a template literal.
 console.log(`Shopping Cart: ${cartItems}`)
 
 //Task 4 - Map Method
@@ -60,7 +60,18 @@ console.log(`Prices discounted 10%: ${tenPercentDiscount}`)
 let inventory = [5, 0, 12, 8, 0]
 
 //Removing the products with no stock using the filter method.
-let stockedInventory = inventory.filter(product => product > 0)
+let stockedInventory = inventory.filter(product => product > 0) //Making a new variable as to not alter the original.
 
-//Logging the filtered inventory array.
+//Logging the filtered inventory array with a template literal.
 console.log(`Stocked Inventory: ${stockedInventory}`)
+
+//Task 6 - Reduce Method
+
+//Declaring an array named sales with the values 500, 300, 200, and 400.
+let sales = [500, 300, 200, 400]
+
+//Using the reduce method to calculate the total revenue from the array.
+let totalRevenue = sales.reduce((sum, price) => sum + price, + 0) //Using totalRevenue instead of sales in order to leave the original array untouched.
+
+//Logging the total revenue using a template literal.
+console.log(`Total Revenue: $${totalRevenue}`)
