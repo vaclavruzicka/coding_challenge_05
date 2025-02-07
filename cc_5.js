@@ -86,3 +86,13 @@ let findCustomer = customers.find(string => string == "Charlie") //Declaring new
 
 //Logging the customer finder using a template literal.
 console.log(`Found Customer: ${findCustomer}`)
+
+//Task 8 - Function Declaration
+
+//Writing a function that calculates tax using amount and a tax rate.
+function calculateTax (amount, taxRate){
+    return amount * taxRate
+}
+
+//Logging a 6% tax rate on a total of 100 dollars using a template literal.
+console.log(`Tax Amount: $${calculateTax(100, .06)}`)
